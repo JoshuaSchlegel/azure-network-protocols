@@ -6,7 +6,8 @@
 
 
 <h1>Network Security Groups (NSGs) and Inspecting Network Protocols</h1>
-A security-focused project demonstrating the configuration and analysis of Azure Network Security Groups (NSGs) and the inspection of network protocols to enforce access controls and monitor network traffic🛡️👀.
+A 🔐security-focused project demonstrating the configuration and analysis of Azure Network Security Groups (NSGs) and the inspection of network protocols to enforce access controls and monitor network traffic.
+<br>
 Feel free to try it for yourself at no cost since <a href="https://azure.microsoft.com/en-us/pricing/purchase-options/azure-account">Microsoft Azure</a> can be used with a free subscription for 30 days and/or $200 worth of credits. Lets do it!
 
 <br><br>
@@ -93,19 +94,32 @@ Feel free to try it for yourself at no cost since <a href="https://azure.microso
 
 <br><br>
 
+***Next, we will need to create a second VM. This time the *Image will be Linux (Ubuntu) Server and we'll need to make sure we create it inside the created Resource Group named "SecurityLab" and Virtual Network (VN)/Subnet.***
+<br><br>
 
-
-
-
-
+- As we did with the first VM creation, go to Virtual Machines in Azure and Create a new VM
+- I'll name this VM "Linux-VM" and make sure its in the same region I created WatchDog1 in
+- Select "Ubuntu Server 22.04 LTS - x64 Gen2" for the Image and Standard_D2s_v3 - 2vcpus, 8GiB memory" for the Size
+- Select Password as the Authentication type
+- To keep it simple, I'll use the same username and password as WatchDog1 - Username: labuser and Password: Password1234
+- Click "Next : Disks >" and then click "Next : Networking >"
+- Make sure the same VN and Subnet are the same as WatchDog1's -> Click "Review + Create" and then "Create"
+- Wait for the VM to be Deployed
 
 <br><br>
 
 <div style="margin: 30px 0; text-align: center;">
-  <img src="" width="500" />
-  <img src="" width="500" />
-  <img src="" width="500" />
-  <img src="" width="500" />
+  <img src="https://github.com/user-attachments/assets/21bccedd-e50a-40f3-ae51-45339bcc482a" width="500" />
+  <img src="https://github.com/user-attachments/assets/93c91d6d-d06e-41f0-a80d-a1c98ae6a270" width="500" />
+  <img src="https://github.com/user-attachments/assets/a16c07a5-7bdf-4ce2-9701-b6edc4da1703" width="500" />
+  <img src="https://github.com/user-attachments/assets/b02431a7-b387-4df2-9e3a-afebc83207ad" width="500" />
 </div>
 
 <br><br>
+
+
+
+
+
+
+
