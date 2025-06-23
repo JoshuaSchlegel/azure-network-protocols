@@ -82,15 +82,13 @@ Feel free to try it for yourself at no cost since <a href="https://azure.microso
 
 - While creating the VM, allow it to create a new Virtual Network (Vnet) and Subnet (**shouldn't have to click anything for this**)
 - Click "Review + Create" on the bottom
-- Click "Create"
+- Click "Create" ***It will take a bit for the VM to be created so you can relax for a moment until the notification shows you that the VM has been deployed.***
 
 <br><br>
 
 <div style="margin: 30px 0; text-align: center;">
   <img src="https://github.com/user-attachments/assets/b0d3adce-fd03-4e32-91da-b3a7a2332a89" width="500" />
   <img src="https://github.com/user-attachments/assets/95d18c62-44fe-466f-a687-927d39a8d06b" width="500" />
-  <img src="" width="500" />
-  <img src="" width="500" />
 </div>
 
 <br><br>
