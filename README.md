@@ -128,7 +128,7 @@ Feel free to try it for yourself at no cost since <a href="https://azure.microso
 <br><br>
 
 <div style="margin: 30px 0; text-align: center;">
-  <img src="https://github.com/user-attachments/assets/18f3d3ba-29d4-4a97-b8a3-f89e9e82eeb1" width="500" />
+  <img src="https://github.com/user-attachments/assets/18f3d3ba-29d4-4a97-b8a3-f89e9e82eeb1" width="800" />
 </div>
 
 <br><br>
