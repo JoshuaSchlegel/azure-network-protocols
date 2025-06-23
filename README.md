@@ -133,6 +133,29 @@ Feel free to try it for yourself at no cost since <a href="https://azure.microso
 
 <br><br>
 
+- Once you get logged into WatchDog1 (Windows 10 VM), pull up a web browser and deny all the options presented to you (no big deal if you accept any)
+- Within the VM, navigate to https://www.wireshark.org and Install Wireshark
+- Click "Download" and select "Windows x64 Installer" -> Click "Open file" once download is complete in the top right
+- Click "Next" in the Installation Wizard -> "Noted" -> Keep clicking "Next" until it installs ***Keep a lookout for Npcap Setup window to pop up. Mine popped up behind the Wireshark installation window so look out for that.***
+- Click "I Agree" on the Npcap Setup window -> "Install" (Don't worry about checking any of the boxes) -> "Finish" ***Wireshark installation should automatically continue after this.***
+
+<br><br>
+
+<div style="margin: 30px 0; text-align: center;">
+  <img src="https://github.com/user-attachments/assets/d2979427-5b5d-4545-aef0-0029e37c0f2b" width="500" />
+  <img src="https://github.com/user-attachments/assets/be4e92fd-720a-46a1-8f7d-6da94dd3b68a" width="500" />
+  <img src="https://github.com/user-attachments/assets/16a9f39a-058c-4a85-9c18-4b9fd24896f3" width="500" />
+  <img src="https://github.com/user-attachments/assets/39260e2d-5fc0-4155-9307-ba40ea7c584c" width="500" />
+</div>
+
+<br><br>
+
+- Click "Next" -> "Finish" in the Wireshark Installation Wizard
+- Pull up Wireshark by Searching for it in the search text box on the taskbar
+
+<br><br>
+
+![image](https://github.com/user-attachments/assets/b0e70fc5-755d-4846-819b-77d484bf9687)
 
 
 
