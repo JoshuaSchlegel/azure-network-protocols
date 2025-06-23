@@ -157,6 +157,75 @@ Feel free to try it for yourself at no cost since <a href="https://azure.microso
 
 ![image](https://github.com/user-attachments/assets/b0e70fc5-755d-4846-819b-77d484bf9687)
 
+<br><br>
 
+- Click the little blue fin in the top left to start the packet capture
+- Type "ICMP" in the text box right below that and hit the "Enter" key to filter it to ICMP traffic
 
+<br><br>
 
+<div style="margin: 30px 0; text-align: center;">
+  <img src="https://github.com/user-attachments/assets/1d73fc08-e1aa-451f-b417-094fe6a9ac0a" width="600" />
+  <img src="https://github.com/user-attachments/assets/61b3b7fa-0e7f-47a7-bb41-6b5f99475bf3" width="600" />
+</div>
+
+<br><br>
+
+***We need to grab the priate IP Address of Linux-VM so we can ping it from within WatchDog1***
+
+<br><br>
+
+- From the Azure VM screen, click on the Linux-VM
+- Scroll down to the "Networking" portion of the info
+- Take note of the Private IP address
+- Back in the Windows 10 VM (WatchDog1), pull up PowerShell by searching it in the search box on the taskbar
+- Type "ping (Linux-VM's private Ip address)" and hit Enter, for example mine would be: ping 10.0.0.5
+- observe the packets in Wireshark
+
+<br><br>
+
+<div style="margin: 30px 0; text-align: center;">
+  <img src="https://github.com/user-attachments/assets/32fcfe2e-7118-4d23-bcf4-a8ef75e4aaa0" width="500" />
+  <img src="https://github.com/user-attachments/assets/9d8c1e4a-932a-4d14-95a1-b4a8114b07a2" width="500" />
+</div>
+
+<br><br>
+
+![image](https://github.com/user-attachments/assets/c5e6f5ef-d2f7-43d6-99f4-9fabf06f5c4b)
+
+<br><br>
+
+***Notice the request and the replies in Wireshark. You can click on either one and inspect the packet details towards the bottom section which will show the MAC address and IP address (Data Link Layer/Network Layer) it came from or was sent to depending on if its the reply/request you are looking at. You can also view the payload of the packet, time of arrival/package was sent, and more.*** 
+
+- In PowerShell ype "ping (Linux-VM's private Ip address) -t" and hit Enter to send a continuous ping and observe the traffic in Wireshark
+- Hit Ctrl + c to stop the activity
+- Type "ping google.com" and observe the changes
+
+<br><br>
+
+![image](https://github.com/user-attachments/assets/453086f3-c5e8-4a27-a93f-a6cc4f6e1db6)
+<br>
+![image](https://github.com/user-attachments/assets/f21d5b3c-1792-413a-9daf-cd2ac979f0d2)
+
+<br><br>
+
+- Try putting that IP address for google.com in a web browser
+- Mine took me to Google.com 😎
+
+<br><br>
+
+![image](https://github.com/user-attachments/assets/792e23ef-dd5e-4529-9170-da2e38f6d413)
+
+<br><br>
+
+***You can also copy and paste or type any of the packet details from Wireshark in ChatGPT and it'll tell you what it means🆒🆒🆒! Gotta love A.I. right?*** 😂
+
+<br><br>
+
+![image](https://github.com/user-attachments/assets/d07b1f47-0905-4915-b3ee-625234fb79e0)
+![image](https://github.com/user-attachments/assets/e4eecac5-73b2-473b-ba21-78c97c7b845d)
+![image](https://github.com/user-attachments/assets/c91d3629-05bd-47f6-80f8-a78525584d71)
+
+<br><br>
+
+***Ok back to what we came here to do. Next, we'll configure a 🛡️🧱Firewall (Network Security Group) in Azure and observe it doing its thing.***
