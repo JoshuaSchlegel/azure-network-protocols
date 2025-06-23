@@ -6,12 +6,14 @@
 
 
 <h1>Network Security Groups (NSGs) and Inspecting Network Protocols</h1>
-A security-focused project demonstrating the configuration and analysis of Azure Network Security Groups (NSGs) and the inspection of network protocols to enforce access controls and monitor network traffic. 👀
+A security-focused project demonstrating the configuration and analysis of Azure Network Security Groups (NSGs) and the inspection of network protocols to enforce access controls and monitor network traffic🛡️👀.
 Feel free to try it for yourself at no cost since <a href="https://azure.microsoft.com/en-us/pricing/purchase-options/azure-account">Microsoft Azure</a> can be used with a free subscription for 30 days and/or $200 worth of credits. Lets do it!
 
-- **Network Security Groups (NSGs)** → These are core components of cloud security (especially in Azure). They control inbound/outbound traffic at the subnet or NIC level — that's fundamental to network access control and segmentation.
+<br><br>
 
-- **Inspecting Network Protocols** → This involves analyzing how data flows over the network, identifying potential vulnerabilities, misconfigurations, or unusual traffic patterns. That’s classic security ops / defensive security / monitoring territory.
+🛡️**Network Security Groups (NSGs)** → These are core components of cloud security (especially in Azure). They control inbound/outbound traffic at the subnet or NIC level — that's fundamental to network access control and segmentation.
+
+👀**Inspecting Network Protocols** → This involves analyzing how data flows over the network, identifying potential vulnerabilities, misconfigurations, or unusual traffic patterns. That’s classic security ops / defensive security / monitoring territory.
 
 <h2>💻 Environments and Technologies Used</h2>
 
@@ -61,8 +63,9 @@ Feel free to try it for yourself at no cost since <a href="https://azure.microso
 - Next, click on the "Resource group" drop down and select the resource group you created. I'll name the VM "WatchDog1" and keep it in the same region as the resource group.
 - Don't worry about anything else other than the *Image and *Size.
 - For the "Image" drop down, we will select "Windows 10 Pro, version 22H2 - x64 Gen2 (free services eligible)". ***(If you do not see this option immediately available, scroll all the way down within the drop down for "Image" and click on "See all images". The next screen will show you all available operating systems available and you can search or find "Windows 10", click the drop down and select "Windows 10 Pro, version 22H2 - x64 Gen2 (free services eligible)".***
-- For "Size", select Standard_D2s_v3 - 2 vcpus, 8 GiB memory".
-- I'll use the username: labuser and password: Password1234 for this VM. Make sure you check the "Licensing" box.
+- For "Size", select Standard_D2s_v3 - 2 vcpus, 8 GiB memory"
+- I'll use the username: labuser and password: Password1234 for this VM. **Make sure you check the "Licensing" box**
+- Click "Next : Disks >" and then "Next : Networking >"
 
 <br><br>
 
@@ -71,8 +74,40 @@ Feel free to try it for yourself at no cost since <a href="https://azure.microso
   <img src="https://github.com/user-attachments/assets/57e26868-3430-4b49-8676-17297750c933" width="500" />
   <img src="https://github.com/user-attachments/assets/36f08826-7be6-46ac-9340-66525ae7da09" width="500" />
   <img src="https://github.com/user-attachments/assets/fb8cfaec-9935-4258-88b4-bf4584ca598a" width="500" />
+  <img src="https://github.com/user-attachments/assets/a3b675d7-8fd1-405f-93bf-2047826a5eac" width="500" />
+  <img src="https://github.com/user-attachments/assets/7f3b4e40-d07b-47e2-bd54-1a53feb156d3" width="500" />
 </div>
 
 <br><br>
 
-- While creating the VM, allow it to create a new Virtual Network (Vnet) and Subnet by clicking on "
+- While creating the VM, allow it to create a new Virtual Network (Vnet) and Subnet (**shouldn't have to click anything for this**)
+- Click "Review + Create" on the bottom
+- Click "Create"
+
+<br><br>
+
+<div style="margin: 30px 0; text-align: center;">
+  <img src="https://github.com/user-attachments/assets/b0d3adce-fd03-4e32-91da-b3a7a2332a89" width="500" />
+  <img src="https://github.com/user-attachments/assets/95d18c62-44fe-466f-a687-927d39a8d06b" width="500" />
+  <img src="" width="500" />
+  <img src="" width="500" />
+</div>
+
+<br><br>
+
+
+
+
+
+
+
+<br><br>
+
+<div style="margin: 30px 0; text-align: center;">
+  <img src="" width="500" />
+  <img src="" width="500" />
+  <img src="" width="500" />
+  <img src="" width="500" />
+</div>
+
+<br><br>
