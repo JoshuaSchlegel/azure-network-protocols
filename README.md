@@ -1,5 +1,16 @@
+![image](https://github.com/user-attachments/assets/f6ca32bd-6450-43ba-a30c-c05933442b2a)
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/58dcf0d9-b808-458d-b937-6dc44d6a7bf7" alt="image" />
+</p>
+
+
 <h1>Network Security Groups (NSGs) and Inspecting Network Protocols</h1>
-In this tutorial, we will observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups.👀 
+A security-focused project demonstrating the configuration and analysis of Azure Network Security Groups (NSGs) and the inspection of network protocols to enforce access controls and monitor network traffic. 👀 
+
+- **Network Security Groups (NSGs)** → These are core components of cloud security (especially in Azure). They control inbound/outbound traffic at the subnet or NIC level — that's fundamental to network access control and segmentation.
+
+- **Inspecting Network Protocols** → This involves analyzing how data flows over the network, identifying potential vulnerabilities, misconfigurations, or unusual traffic patterns. That’s classic security ops / defensive security / monitoring territory.
 
 <h2>💻 Environments and Technologies Used</h2>
 
@@ -18,10 +29,12 @@ In this tutorial, we will observe various network traffic to and from Azure Virt
 - 
 <h2>🪜 High-Level Steps</h2>
 
-- Step 1: Connect to VM using RDP & Install Wireshark
+- Step 1: Create Virtual Machines and Connect to VMs using Remote Desktop Protocol (RDP) & Install Wireshark
 - Step 2: Observe ICMP Traffic
 - Step 3: Use NSG (Firewall) to Deny Ping
 - Step 4: Observe SSH and DHCP Traffic
 - Step 5: Observe DNS and RDP Traffic
 
 <h2>🎬 Actions and Observations</h2>
+
+
