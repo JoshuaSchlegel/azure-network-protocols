@@ -117,7 +117,21 @@ Feel free to try it for yourself at no cost since <a href="https://azure.microso
 
 <br><br>
 
+***Now we can use Remote Desktop to log in to our Windows 10 VM and observe ICMP Traffic. We will need to install Wireshark to capture the packets and observe the traffic, as you will see.***
 
+- First, log into WatchDog1 by pulling up Remote Desktop (RDC) by typing "Remote Desktop Connection" in the Search bar on your taskbar
+- In the Azure VM page, copy the public IP Adress located to the right of the VM and paste it into RDC
+- Click Connect and use the username and password you created when you created the VM (labuser and Password1234) ***You may need to select "More Choices" -> "Use a different account"***
+<br><br>
+***When confronted with all the options for Windows 10 after logging into the VM and/or pulling up the Microsoft Edge web browser, you can decline/say no to everything. If you already clicked through with any of the options selected it is not a big deal.***
+
+<br><br>
+
+<div style="margin: 30px 0; text-align: center;">
+  <img src="https://github.com/user-attachments/assets/18f3d3ba-29d4-4a97-b8a3-f89e9e82eeb1" width="500" />
+</div>
+
+<br><br>
 
 
 
