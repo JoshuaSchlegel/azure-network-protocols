@@ -315,7 +315,7 @@ Feel free to try it for yourself at no cost since <a href="https://azure.microso
 - Type "ipconfig /release" -> hit Enter -> type "ipconfig /renew"
 - Click File -> Save as -> type "c:\programdata" at the top -> in File name at the bottom type "dhcp.bat" and click "Save"
 - In PowerShell type "cd c:\programdata" -> then type "ls" to see the file we just created
-- Run dhcp.bat by typing ".\dhcp.bat (***Your connection will be lost and will pull back up on its own.***)😉 
+- Run dhcp.bat by typing ".\dhcp.bat (***Your connection will be lost and will pull back up on its own, so just give it a moment for that to happen.***)😉 
 <br>
 ***The traffic will show the IP address releasing and renewing. It will show the entire handshake process for releasing and acquiring an IP address from the DHCP Server.***
 
@@ -330,6 +330,9 @@ Feel free to try it for yourself at no cost since <a href="https://azure.microso
 
 <br><br>
 
+![image](https://github.com/user-attachments/assets/3d0d74f8-d183-42fb-96ea-778045d7e987)
+
+<br><br>
 
 
 
