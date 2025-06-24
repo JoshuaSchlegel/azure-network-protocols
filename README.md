@@ -218,7 +218,7 @@ Feel free to try it for yourself at no cost since <a href="https://azure.microso
 
 <br><br>
 
-***You can also copy and paste or type any of the packet details from Wireshark in ChatGPT and it'll tell you what it means🆒🆒🆒! Gotta love A.I. right?*** 😂
+***You can also copy and paste or type any of the packet details from Wireshark in ChatGPT and it'll break it down for you🆒🆒🆒! Gotta love A.I. right?*** 😂
 
 <br><br>
 
@@ -229,3 +229,72 @@ Feel free to try it for yourself at no cost since <a href="https://azure.microso
 <br><br>
 
 ***Ok back to what we came here to do. Next, we'll configure a 🛡️🧱Firewall (Network Security Group) in Azure and observe it doing its thing.***
+
+<br><br>
+
+- In the Windows 10 VM (WatchDog1), start a non-stop ping to the Linux-VM (Ubuntu Server) ***If you need to see how to do this again, please scroll up a bit to where we intitiated the non-stop ping***😁
+- In the VM Screen in Azure, open up the info for Linux-VM by clicking on "Linux-VM"
+- Navigate to Networking on the left side panel of the info window -> Click "Network Settings"
+- Scroll down on the right side to "Rules" and click on the "+ Create a port rule" (Upper right of "Rules" in blue) drop down
+- Click "Inbound Port Rule"
+
+<br><br>
+
+<div style="margin: 30px 0; text-align: center;">
+  <img src="https://github.com/user-attachments/assets/97fb03d7-32f2-499f-b730-597236029066" width="500" />
+  <img src="https://github.com/user-attachments/assets/ccfd79f8-79d9-46cb-a34b-1a11556156d0" width="500" />
+</div>
+
+<br><br>
+
+- Under "Protocol" select "ICMPv4"
+- Under "Action" select "Deny"
+- Under "Priority*" type "290" in the text box
+- Click "Add"
+
+<br><br>
+
+![image](https://github.com/user-attachments/assets/a8a38761-4be5-4f71-a555-0c43e752bc03)
+
+<br><br>
+
+***Take a look at the firewall you just created.***
+
+<br><br>
+
+![image](https://github.com/user-attachments/assets/a1e103eb-ef3e-4b95-b602-eb52fa6e0e21)
+
+<br><br>
+
+- Go back into WatchDog1 and observe the traffic in Wireshark now (you should still have it filered to ICMP)
+- Also note in PowerShell you will see the ping failing
+<br>
+***This is our NSG/Firewall in action. We put a block on incoming ICMP requests to the Linux-VM and this is what it looks like when we are pinging from WatchDog1. Notice how there are 0 replies being received from Linux-VM now.***
+<br><br>
+
+![image](https://github.com/user-attachments/assets/9af08348-60a2-49f2-be18-9ba0c06450d8)
+
+<br><br>
+
+- Go ahead and delete the NSG back in Azure -> Linux-VM -> Network Settings -> Scroll to the right to reveal the Trash Symbol to click on and delete it
+
+<br><br>
+
+![image](https://github.com/user-attachments/assets/1344c8c4-a298-4e9b-84d6-60908701e8bb)
+
+<br><br>
+
+- The pinging should start working normally again
+- Hit "Ctrl + C" to stop the non-stop ping
+<br><br>
+
+***Now, we will Observe Secure Shell (SSH) Traffic. We'll be logging into the Linux-VM from WatchDog1's PowerShell through SSH protocol using Linux-VM's private IP address.***
+
+<br><br>
+
+- In WatchDog1, type "SSH" or "tcp.port==22" in the text box to filter the packet capture for SSH traffic only
+- In PowerShell, type "ssh labuser@(Linux-VM's private IP address)" ***(This is case sensitive as well just so you know.)***
+- It will have you type in the username and password for Linux-VM (***You will not be able to see the password as you type it in PowerShell so don't let that confuse you.***)
+- Once successful, observe the traffic spam in WireShark
+- Type "exit" and hit Enter to exit the SSH connection
+
