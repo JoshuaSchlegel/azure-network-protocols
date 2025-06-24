@@ -12,9 +12,9 @@ Feel free to try it for yourself at no cost since <a href="https://azure.microso
 
 <br><br>
 
-🛡️**Network Security Groups (NSGs)** → These are core components of cloud security (especially in Azure). They control inbound/outbound traffic at the subnet or NIC level — that's fundamental to network access control and segmentation.
+🛡️**Network Security Groups (NSGs)** → These are core components of cloud security (especially in Azure). They control inbound/outbound traffic at the subnet or NIC level — this is fundamental to network access control and segmentation.
 
-👀**Inspecting Network Protocols** → This involves analyzing how data flows over the network, identifying potential vulnerabilities, misconfigurations, or unusual traffic patterns. That’s classic security ops / defensive security / monitoring territory.
+👀**Inspecting Network Protocols** → This involves analyzing how data flows over the network, identifying potential vulnerabilities, misconfigurations, or unusual traffic patterns. This is classic security ops / defensive security / monitoring territory.
 
 <h2>💻 Environments and Technologies Used</h2>
 
