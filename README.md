@@ -294,7 +294,20 @@ Feel free to try it for yourself at no cost since <a href="https://azure.microso
 
 - In WatchDog1, type "SSH" or "tcp.port==22" in the text box to filter the packet capture for SSH traffic only
 - In PowerShell, type "ssh labuser@(Linux-VM's private IP address)" ***(This is case sensitive as well just so you know.)***
-- It will have you type in the username and password for Linux-VM (***You will not be able to see the password as you type it in PowerShell so don't let that confuse you.***)
-- Once successful, observe the traffic spam in WireShark
+- It will have you type yes and the password for Linux-VM (***You will not be able to see the password as you type it in PowerShell so don't let that confuse you.***)
+- Once successful, observe the traffic spam in WireShark (***Notice anything you type in will show traffic in WireShark.***)
 - Type "exit" and hit Enter to exit the SSH connection
+
+<br><br>
+
+<div style="margin: 30px 0; text-align: center;">
+  <img src="https://github.com/user-attachments/assets/9b82bafb-8202-4437-8c97-340adcdf18f5" width="800" />
+  <br>
+  <img src="https://github.com/user-attachments/assets/73bd4314-fc57-414a-bf5c-6008a42fa0c7" width="800" />
+</div>
+
+<br><br>
+
+
+
 
