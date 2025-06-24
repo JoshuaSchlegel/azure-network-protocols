@@ -308,6 +308,29 @@ Feel free to try it for yourself at no cost since <a href="https://azure.microso
 
 <br><br>
 
+***Lets Observe DHCP Traffic as well.***
+
+- In WireShark, type "DHCP" or "udp.port==67 || udp.port==68" into the text box to filter for DHCP traffic
+- Pull up NotePad by searching for it in the taskbar
+- Type "ipconfig /release" -> hit Enter -> type "ipconfig /renew"
+- Click File -> Save as -> type "c:\programdata" at the top -> in File name at the bottom type "dhcp.bat" and click "Save"
+- In PowerShell type "cd c:\programdata" -> then type "ls" to see the file we just created
+- Run dhcp.bat by typing ".\dhcp.bat (***Your connection will be lost and will pull back up on its own.***)😉 
+<br>
+***The traffic will show the IP address releasing and renewing. It will show the entire handshake process for releasing and acquiring an IP address from the DHCP Server.***
+
+  <br><br>
+
+<div style="margin: 30px 0; text-align: center;">
+  <img src="https://github.com/user-attachments/assets/f4f771ee-8530-4d81-980c-7a94b85cf8e7" width="500" />
+  <img src="https://github.com/user-attachments/assets/a63f6684-0424-4edd-8b59-51c663d32e90" width="500" />
+  <img src="https://github.com/user-attachments/assets/060904ce-08fc-4155-858e-b55d08de53dd" width="500" />
+  <img src="https://github.com/user-attachments/assets/45789f2e-1fbd-466f-b3fa-be6883ff21e0" width="500" />
+</div>
+
+<br><br>
+
+
 
 
 
