@@ -358,5 +358,5 @@ Feel free to try it for yourself at no cost since <a href="https://azure.microso
 <br><br>
 
 ***Well, that concludes this project! If you're done with playing around with the VMs and Wireshark, don't forget to delete the resource group we created so you don't rack up any charges! Or if you want to step away and come back to do some more or redo the entire project, check the boxes in the VM screen in Azure and click "Stop" to shut them down. That way you can come back and start them back up : ).***
-<br>
+<br><br>
 ***I hope you enjoyed it as much as I did and that it helped teach you a thing or two. Stay tuned for more upcoming Security projects from yours truly.*** 🙏😌
