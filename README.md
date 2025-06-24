@@ -5,7 +5,7 @@
 </p>
 
 
-<h1>Cloud Network Security & Protocol Monitoring Project</h1>
+<h1>Cloud Network Security & Protocol Monitoring</h1>
 A 🔐security-focused project demonstrating the configuration and analysis of Azure Network Security Groups (NSGs) and the inspection of network protocols to enforce access controls and monitor network traffic.
 <br>
 Feel free to try it for yourself at no cost since <a href="https://azure.microsoft.com/en-us/pricing/purchase-options/azure-account">Microsoft Azure</a> can be used with a free subscription for 30 days and/or $200 worth of credits. Lets do it!
