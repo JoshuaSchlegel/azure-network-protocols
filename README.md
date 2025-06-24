@@ -293,7 +293,7 @@ Feel free to try it for yourself at no cost since <a href="https://azure.microso
 <br><br>
 
 - In WatchDog1, type "SSH" or "tcp.port==22" in the text box to filter the packet capture for SSH traffic only
-- In PowerShell, type "ssh labuser@(Linux-VM's private IP address)" ***(This is case sensitive as well just so you know.)***
+- In PowerShell, type "ssh labuser@(Linux-VM's private IP address)" and hit Enter ***(This is case sensitive as well.)***
 - It will have you type yes and the password for Linux-VM (***You will not be able to see the password as you type it in PowerShell so don't let that confuse you.***)
 - Once successful, observe the traffic spam in WireShark (***Notice anything you type in will show traffic in WireShark.***)
 - Type "exit" and hit Enter to exit the SSH connection
@@ -314,8 +314,8 @@ Feel free to try it for yourself at no cost since <a href="https://azure.microso
 - Pull up NotePad by searching for it in the taskbar
 - Type "ipconfig /release" -> hit Enter -> type "ipconfig /renew"
 - Click File -> Save as -> type "c:\programdata" at the top -> in File name at the bottom type "dhcp.bat" and click "Save"
-- In PowerShell type "cd c:\programdata" -> then type "ls" to see the file we just created
-- Run dhcp.bat by typing ".\dhcp.bat (***Your connection will be lost and will pull back up on its own, so just give it a moment for that to happen.***)😉 
+- In PowerShell type "cd c:\programdata" and hit Enter -> then type "ls" and hit Enter to see the file we just created
+- Run dhcp.bat by typing ".\dhcp.bat and hit Enter (***Your connection will be lost and will pull back up on its own, so just give it a moment for that to happen.***)😉 
 <br>
 ***The traffic will show the IP address releasing and renewing. It will show the entire handshake process for releasing and acquiring an IP address from the DHCP Server.***
 
@@ -336,6 +336,25 @@ Feel free to try it for yourself at no cost since <a href="https://azure.microso
 
 ***We'll review two more packet captures filtered for DNS Traffic and RDP Traffic before calling it the end of this lab. Thanks for sticking with me this far!*** 💪
 
+- In Wireshark, filter the traffic to only show DNS traffic by typing "DNS" or "tcp.port==53 || udp.port==53"
+- In PowerShell, (***First type "cd ~" to get back to the user directory/home directory if your still in c:\programdata or you could just close out PowerShell and reopen it.)*** type "nslookup google.com" (or "nslookup disney.com" or any website whom's IP address you'd like to look up)
+- Observe the DNS Traffic in Wireshark
+(***Feel free to copy/paste or type in any of the IP addresses you get for the websites you use with nslookup into a web browser to see if it takes you to their site. It may or may not.***)
 
+<br><br>
 
+![image](https://github.com/user-attachments/assets/f6563e62-8a33-44cd-bcd4-6a5793837a37)
 
+<br><br>
+
+- Now filter the traffic in Wireshark to show Remote Desktop Protocol (RDP) by typing "RDP" or "tcp.port==3389" in the text box
+- Observe the traffic
+(***It should be flowing non-stop due to us being logged into WatchDog1 using RDC, therefore its showing you a live stream connection from one computer to another, which traffic is always being transmitted between through the connection.***)
+
+<br><br>
+
+![image](https://github.com/user-attachments/assets/aeecac91-6efa-4f4d-8962-dc45c06df496)
+
+<br><br>
+
+***Well, that concludes this project! I hope you enjoyed it as much as I did and that it helped teach you a thing or two. Stay tuned for more upcoming Security projects from yours truly.*** 🙏😌
