@@ -334,6 +334,8 @@ Feel free to try it for yourself at no cost since <a href="https://azure.microso
 
 <br><br>
 
+***We'll review two more packet captures filtered for DNS Traffic and RDP Traffic before calling it the end of this lab. Thanks for sticking with me this far!*** 💪
+
 
 
 
