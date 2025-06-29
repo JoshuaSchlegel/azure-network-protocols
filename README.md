@@ -218,7 +218,7 @@ Feel free to try it for yourself at no cost since <a href="https://azure.microso
 
 <br><br>
 
-***You can also copy and paste or type any of the packet details from Wireshark in ChatGPT and it'll break it down for you🆒🆒🆒! Gotta love A.I. right?*** 😂
+***You can also copy and paste or type any of the packet details from Wireshark in ChatGPT and it'll break it down for you🆒🆒🆒! Gotta love A.I. right?*** 
 
 <br><br>
 
