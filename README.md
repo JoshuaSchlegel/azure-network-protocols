@@ -269,7 +269,9 @@ Feel free to try it for yourself at no cost since <a href="https://azure.microso
 - Go back into WatchDog1 and observe the traffic in Wireshark now (you should still have it filered to ICMP)
 - Also note in PowerShell you will see the ping failing
 <br>
+
 ***This is our NSG/Firewall in action. We put a block on incoming ICMP requests to the Linux-VM and this is what it looks like when we are pinging from WatchDog1. Notice how there are 0 replies being received from Linux-VM now.***
+
 <br><br>
 
 ![image](https://github.com/user-attachments/assets/9af08348-60a2-49f2-be18-9ba0c06450d8)
@@ -317,6 +319,7 @@ Feel free to try it for yourself at no cost since <a href="https://azure.microso
 - In PowerShell type "cd c:\programdata" and hit Enter -> then type "ls" and hit Enter to see the file we just created
 - Run dhcp.bat by typing ".\dhcp.bat and hit Enter (***Your connection will be lost and will pull back up on its own, so just give it a moment for that to happen.***)😉 
 <br>
+
 ***The traffic will show the IP address releasing and renewing. It will show the entire handshake process for releasing and acquiring an IP address from the DHCP Server.***
 
   <br><br>
